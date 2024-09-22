@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inequality - Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="titlee">Inequality Solver</h1>
+        <p>Enter the inequality in the form: ax + b &lt;= c</p>
+        <input type="number" id="a" placeholder="Enter a (coefficient of x)" />
+        <input type="number" id="b" placeholder="Enter b (constant)" />
+        <input type="number" id="c" placeholder="Enter c (constant)" />
+        
+        <div>
+            <label for="operator">Select inequality:</label>
+            <select id="operator">
+                <option value="<">Less than (&lt;)</option>
+                <option value="<=">Less than or equal to (&lt;=)</option>
+                <option value=">">Greater than (&gt;)</option>
+                <option value=">=">Greater than or equal to (&gt;=)</option>
+            </select>
+        </div>
+
+        <button onclick="solveInequality()">Solve Inequality</button>
+        <p id="result"></p>
+        <span class="credit">Made with ❤️ By Animesh</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
